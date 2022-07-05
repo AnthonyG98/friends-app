@@ -2,13 +2,16 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const authSlice = createSlice({
   name: "auth",
-  initialState: { isLoggedIn: false },
+  initialState: { isLoggedIn: false, fullName: "" },
   reducers: {
     login(state) {
       state.isLoggedIn = true;
     },
     logout(state) {
       state.isLoggedIn = false;
+    },
+    inputFullName(state, other) {
+      state.fullName = other;
     },
   },
 });

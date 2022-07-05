@@ -18,7 +18,7 @@ function Login({ fullName, username, password }) {
       <div className="inputs">
         <h1>LOGIN</h1>
         <div className="input-container">
-          <label>Full Name</label>
+          <label>Full Name:</label>
           <input
             type="text"
             onChange={(e) => {
@@ -28,7 +28,7 @@ function Login({ fullName, username, password }) {
           />
         </div>
         <div className="input-container">
-          <label>Username</label>
+          <label>Username:</label>
           <input type="text" value={username} />
         </div>
         <div className="input-container">
